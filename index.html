@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Avenor Systems</title>
+	<meta
+		name="description"
+		content="Avenor Systems is a digital engineering firm building high-performance web systems, custom web applications, and data-driven digital platforms."
+	>
+	<style>
+		:root {
+			color-scheme: dark;
+			--bg: #0b1020;
+			--panel: #111833;
+			--text: #e8ecff;
+			--muted: #aab4dd;
+			--accent: #7cc0ff;
+			--border: #1f2a52;
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: 0;
+			font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+			background: radial-gradient(circle at top, #162552 0, var(--bg) 55%);
+			color: var(--text);
+			line-height: 1.6;
+		}
+
+		main {
+			max-width: 920px;
+			margin: 0 auto;
+			padding: 56px 20px 72px;
+		}
+
+		.badge {
+			display: inline-block;
+			padding: 6px 12px;
+			border: 1px solid var(--border);
+			border-radius: 999px;
+			background: rgba(124, 192, 255, 0.08);
+			color: var(--accent);
+			font-weight: 600;
+			letter-spacing: 0.2px;
+		}
+
+		h1 {
+			margin: 14px 0 12px;
+			font-size: clamp(2rem, 4vw, 3rem);
+			line-height: 1.15;
+		}
+
+		p {
+			margin: 0 0 14px;
+			color: var(--muted);
+			font-size: 1.05rem;
+		}
+
+		.panel {
+			margin-top: 26px;
+			padding: 22px;
+			border: 1px solid var(--border);
+			border-radius: 14px;
+			background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0));
+		}
+
+		h2 {
+			margin: 0 0 10px;
+			font-size: 1.35rem;
+			color: var(--text);
+		}
+
+		ul {
+			margin: 8px 0 0;
+			padding-left: 22px;
+			color: var(--muted);
+		}
+
+		li {
+			margin: 7px 0;
+		}
+
+		.closing {
+			margin-top: 28px;
+			font-size: 1.1rem;
+			color: var(--text);
+			font-weight: 600;
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<span class="badge">Digital Engineering Firm</span>
+		<h1>Avenor Systems</h1>
+		<p>
+			Avenor Systems is a digital engineering firm specializing in the design, development,
+			and deployment of high-performance web systems.
+		</p>
+		<p>
+			With a foundation in software engineering and user-centered design, we build tailored digital
+			solutions that help modern brands scale, streamline operations, and optimize customer experiences.
+		</p>
+
+		<section class="panel" aria-labelledby="capabilities-title">
+			<h2 id="capabilities-title">What We Build</h2>
+			<ul>
+				<li>Online ordering systems for restaurants and cafés</li>
+				<li>Reservation, scheduling, and client portals</li>
+				<li>Backend management dashboards</li>
+				<li>Secure form submission and customer intake flows</li>
+				<li>Integrations with payment processors and third-party APIs</li>
+			</ul>
+		</section>
+
+		<section class="panel" aria-labelledby="approach-title">
+			<h2 id="approach-title">Our Approach</h2>
+			<p>
+				Every solution is engineered from the ground up with performance, scalability,
+				and brand identity in mind. No recycled templates. No cookie-cutter code.
+			</p>
+			<p>
+				Whether it is a sleek one-pager or a fully interactive web app,
+				we deliver platforms that feel premium, modern, and effortless to use.
+			</p>
+		</section>
+
+		<p class="closing">We are not just web developers. We are engineers of digital experiences.</p>
+	</main>
+</body>
+</html>
