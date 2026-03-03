@@ -304,9 +304,210 @@ p {
 	font-size: 0.88rem;
 }
 
+.footer-links {
+	white-space: nowrap;
+}
+
+.footer-links a {
+	color: var(--accent);
+	text-decoration: none;
+}
+
+.tech-cta {
+	position: relative;
+	overflow: hidden;
+	margin-top: 24px;
+	padding: 22px 24px;
+	border-radius: 14px;
+	border: 1px solid var(--line);
+	background:
+		linear-gradient(170deg, rgba(14, 26, 46, 0.96), rgba(9, 16, 30, 0.96));
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px;
+}
+
+.tech-cta::before {
+	content: "";
+	position: absolute;
+	inset: -30% auto -30% -6%;
+	width: 46%;
+	background:
+		repeating-linear-gradient(120deg, rgba(129, 211, 255, 0.16) 0 2px, transparent 2px 13px);
+	opacity: 0.35;
+	pointer-events: none;
+	transform: skewX(-8deg);
+}
+
+.tech-cta > * {
+	position: relative;
+	z-index: 1;
+}
+
+.tech-cta h2 {
+	margin-bottom: 6px;
+	font-size: clamp(1.2rem, 2.2vw, 1.6rem);
+}
+
+.tech-cta p {
+	max-width: 58ch;
+}
+
+.form-tech-wrap {
+	display: grid;
+	grid-template-columns: 270px minmax(0, 1fr);
+	gap: 18px;
+}
+
+.tech-graphic {
+	position: relative;
+	min-height: 100%;
+	border: 1px solid var(--line);
+	border-radius: 12px;
+	background:
+		radial-gradient(circle at 72% 20%, rgba(138, 210, 255, 0.2) 0%, transparent 40%),
+		linear-gradient(170deg, rgba(11, 20, 35, 0.9), rgba(8, 14, 25, 0.9));
+	overflow: hidden;
+}
+
+.tech-graphic::before,
+.tech-graphic::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	pointer-events: none;
+}
+
+.tech-graphic::before {
+	background:
+		repeating-linear-gradient(90deg, rgba(129, 211, 255, 0.1) 0 1px, transparent 1px 26px),
+		repeating-linear-gradient(0deg, rgba(129, 211, 255, 0.08) 0 1px, transparent 1px 22px);
+	opacity: 0.6;
+}
+
+.tech-graphic::after {
+	background:
+		radial-gradient(circle at 40% 28%, rgba(145, 217, 255, 0.95) 0 1.8%, transparent 6%),
+		repeating-conic-gradient(from 0deg at 40% 28%, rgba(141, 214, 255, 0.26) 0deg 0.34deg, transparent 0.34deg 2.3deg);
+	opacity: 0.48;
+}
+
+.tech-node {
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background: var(--accent);
+	box-shadow: 0 0 0 8px rgba(138, 210, 255, 0.14);
+}
+
+.node-a {
+	top: 24%;
+	left: 18%;
+}
+
+.node-b {
+	top: 60%;
+	right: 20%;
+}
+
+.node-c {
+	bottom: 18%;
+	left: 45%;
+}
+
+.form-intro {
+	margin-bottom: 12px;
+}
+
+.contact-form {
+	display: grid;
+	gap: 10px;
+}
+
+.contact-form label {
+	font-size: 0.9rem;
+	color: #d7e1f6;
+	font-weight: 600;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+	width: 100%;
+	padding: 10px 12px;
+	border-radius: 10px;
+	border: 1px solid var(--line);
+	background: rgba(8, 14, 26, 0.92);
+	color: var(--text);
+	font: inherit;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+	outline: 2px solid rgba(138, 210, 255, 0.44);
+	outline-offset: 1px;
+}
+
+.contact-form textarea {
+	resize: vertical;
+	min-height: 120px;
+}
+
+.contact-form button {
+	justify-self: start;
+	margin-top: 4px;
+}
+
+.legal-panel {
+	display: grid;
+	gap: 14px;
+	position: relative;
+	overflow: hidden;
+}
+
+.legal-panel::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background:
+		repeating-linear-gradient(130deg, rgba(120, 200, 255, 0.09) 0 1px, transparent 1px 17px);
+	opacity: 0.35;
+	pointer-events: none;
+}
+
+.legal-panel h2,
+.legal-panel p {
+	position: relative;
+	z-index: 1;
+}
+
+.legal-panel h2 {
+	margin-bottom: 0;
+	font-size: 1.1rem;
+}
+
 @media (max-width: 900px) {
 	:root {
 		--header-height: 86px;
+	}
+
+	.container {
+		width: min(1120px, calc(100% - 24px));
+	}
+
+	.nav-wrap {
+		gap: 8px;
+	}
+
+	.brand {
+		gap: 0;
+	}
+
+	.brand span {
+		display: none;
 	}
 
 	.simple-grid,
@@ -319,12 +520,26 @@ p {
 	}
 
 	.site-nav {
-		gap: 10px;
+		gap: 4px;
 	}
 
 	.site-nav a {
-		padding: 10px 15px;
-		font-size: 1.02rem;
+		padding: 7px 9px;
+		font-size: 0.88rem;
+		white-space: nowrap;
+	}
+
+	.tech-cta {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.form-tech-wrap {
+		grid-template-columns: 1fr;
+	}
+
+	.tech-graphic {
+		min-height: 180px;
 	}
 
 	.page-header {
