@@ -6,129 +6,69 @@
 	<title>Avenor Systems</title>
 	<meta
 		name="description"
-		content="Avenor Systems is a digital engineering firm building high-performance web systems, custom web applications, and data-driven digital platforms."
+		content="Avenor Systems is a national digital engineering firm building high-performance web systems, custom platforms, and business-focused web applications."
 	>
-	<style>
-		:root {
-			color-scheme: dark;
-			--bg: #0b1020;
-			--panel: #111833;
-			--text: #e8ecff;
-			--muted: #aab4dd;
-			--accent: #7cc0ff;
-			--border: #1f2a52;
-		}
-
-		* {
-			box-sizing: border-box;
-		}
-
-		body {
-			margin: 0;
-			font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
-			background: radial-gradient(circle at top, #162552 0, var(--bg) 55%);
-			color: var(--text);
-			line-height: 1.6;
-		}
-
-		main {
-			max-width: 920px;
-			margin: 0 auto;
-			padding: 56px 20px 72px;
-		}
-
-		.badge {
-			display: inline-block;
-			padding: 6px 12px;
-			border: 1px solid var(--border);
-			border-radius: 999px;
-			background: rgba(124, 192, 255, 0.08);
-			color: var(--accent);
-			font-weight: 600;
-			letter-spacing: 0.2px;
-		}
-
-		h1 {
-			margin: 14px 0 12px;
-			font-size: clamp(2rem, 4vw, 3rem);
-			line-height: 1.15;
-		}
-
-		p {
-			margin: 0 0 14px;
-			color: var(--muted);
-			font-size: 1.05rem;
-		}
-
-		.panel {
-			margin-top: 26px;
-			padding: 22px;
-			border: 1px solid var(--border);
-			border-radius: 14px;
-			background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0));
-		}
-
-		h2 {
-			margin: 0 0 10px;
-			font-size: 1.35rem;
-			color: var(--text);
-		}
-
-		ul {
-			margin: 8px 0 0;
-			padding-left: 22px;
-			color: var(--muted);
-		}
-
-		li {
-			margin: 7px 0;
-		}
-
-		.closing {
-			margin-top: 28px;
-			font-size: 1.1rem;
-			color: var(--text);
-			font-weight: 600;
-		}
-	</style>
+	<link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-	<main>
-		<span class="badge">Digital Engineering Firm</span>
-		<h1>Avenor Systems</h1>
-		<p>
-			Avenor Systems is a digital engineering firm specializing in the design, development,
-			and deployment of high-performance web systems.
-		</p>
-		<p>
-			With a foundation in software engineering and user-centered design, we build tailored digital
-			solutions that help modern brands scale, streamline operations, and optimize customer experiences.
-		</p>
+	<header class="site-header">
+		<div class="container nav-wrap">
+			<a class="brand" href="index.html" aria-label="Avenor Systems home">
+				<img class="brand-logo" src="assets/images/ASLogo.png" alt="Avenor Systems logo">
+				<span>Avenor Systems</span>
+			</a>
+			<nav class="site-nav" aria-label="Main navigation">
+				<a class="active" href="index.html">Home</a>
+				<a href="about.html">About Us</a>
+				<a href="services.html">Our Services</a>
+			</nav>
+		</div>
+	</header>
 
-		<section class="panel" aria-labelledby="capabilities-title">
-			<h2 id="capabilities-title">What We Build</h2>
-			<ul>
-				<li>Online ordering systems for restaurants and cafés</li>
-				<li>Reservation, scheduling, and client portals</li>
-				<li>Backend management dashboards</li>
-				<li>Secure form submission and customer intake flows</li>
-				<li>Integrations with payment processors and third-party APIs</li>
-			</ul>
+	<main class="container page-home">
+		<section class="hero" aria-label="Avenor Systems hero image"></section>
+
+		<section class="hero-text-block" aria-labelledby="hero-title">
+			<p class="eyebrow">National Digital Engineering Firm</p>
+			<h1 id="hero-title">Professional web systems engineered to win trust and drive growth.</h1>
+			<p class="lead">
+				Avenor Systems designs and builds high-performance digital platforms for modern brands,
+				with delivery across multiple states and a quality standard built for serious business.
+			</p>
+			<div class="cta-row">
+				<a class="btn btn-primary" href="services.html">View Services</a>
+				<a class="btn btn-secondary" href="about.html">About Avenor</a>
+			</div>
 		</section>
 
-		<section class="panel" aria-labelledby="approach-title">
-			<h2 id="approach-title">Our Approach</h2>
+		<section class="panel" aria-labelledby="national-title">
+			<h2 id="national-title">Built for business at a national level</h2>
 			<p>
-				Every solution is engineered from the ground up with performance, scalability,
-				and brand identity in mind. No recycled templates. No cookie-cutter code.
-			</p>
-			<p>
-				Whether it is a sleek one-pager or a fully interactive web app,
-				we deliver platforms that feel premium, modern, and effortless to use.
+				From local operators to multi-location brands, Avenor Systems supports clients across different U.S. states
+				with custom digital systems that are scalable, secure, and operationally effective.
 			</p>
 		</section>
 
-		<p class="closing">We are not just web developers. We are engineers of digital experiences.</p>
+		<section class="panel panel-compact" aria-labelledby="preview-title">
+			<h2 id="preview-title">Professional structure. Clear outcomes.</h2>
+			<div class="simple-grid">
+				<article>
+					<h3>About Us</h3>
+					<p>Learn who we are, how we work, and what makes our engineering process different.</p>
+					<a class="text-link" href="about.html">Read About Us</a>
+				</article>
+				<article>
+					<h3>Our Services</h3>
+					<p>Explore the web systems and platform capabilities we deliver for growth-focused businesses.</p>
+					<a class="text-link" href="services.html">See Our Services</a>
+				</article>
+			</div>
+		</section>
 	</main>
+
+	<footer class="site-footer container">
+		<span>© Avenor Systems</span>
+		<span>Engineering digital experiences with national reach</span>
+	</footer>
 </body>
 </html>
