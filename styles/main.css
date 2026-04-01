@@ -724,7 +724,31 @@ p { margin: 0; color: var(--muted); }
 	min-height: 130px;
 }
 
+.hp-field {
+	position: absolute;
+	left: -9999px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
 .contact-form button { justify-self: start; margin-top: 6px; }
+
+.form-status {
+	min-height: 1.35em;
+	font-size: 0.92rem;
+	margin: 2px 0 0;
+	color: var(--muted);
+}
+
+.form-status.is-success {
+	color: var(--accent2);
+}
+
+.form-status.is-error {
+	color: #ff9ea0;
+}
 
 /* ─── FOOTER ─────────────────────────────────────── */
 .site-footer {
